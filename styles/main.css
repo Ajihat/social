@@ -1,0 +1,175 @@
+.main {
+  max-width: 1300px;
+  margin: 70px auto;
+  font-family: 'Univers LT W05_55 Roman', serif;
+}
+
+.header {
+  width: 100%;
+}
+
+.header__subtitle {
+  display: block;
+  font-family: 'UniversLTPro-BoldExt', serif;
+  font-size: 18px;
+  font-weight: normal;
+  max-width: 600px;
+}
+
+.header__title {
+  font-family: 'UniversLTPro-BoldExt', serif;
+  font-size: 40px;
+  font-weight: normal;
+  text-transform: uppercase;
+}
+
+.social-media {
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.social-media__item {
+  width: 30%;
+  text-align: center;
+}
+
+.social-media__link {
+  text-decoration: none;
+}
+
+.social-media__button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  margin-bottom: 30px;
+  font-family: 'UniversLTPro-BoldExt', serif;
+  color: black;
+  background-image: url("../images/holo_tlo.png");
+  background-size: cover;
+	background-repeat: no-repeat;
+  font-size: 16px;
+  text-decoration: none;
+  text-align: center;
+  vertical-align:middle;
+  margin-top: 25px;
+  transition: .3s;
+  cursor: pointer;
+  
+}
+
+.social-media__logo {
+  width: 20px;
+  margin-right: 15px;
+}
+.social-media__text {
+  position: relative;
+  top: 2px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.social-media__button:hover {
+  box-shadow:
+  0 0 10px 10px #fff,  /* inner white */
+  0 0 10px 5px #f0f, /* middle magenta */
+  0 0 10px 10px #0ff; /* outer cyan */
+}
+
+
+
+.social-media__button:hover .fb_icon{
+	color:black;
+}
+	
+
+.social-media__under {
+  font-family: 'Univers LT W05_55 Roman', serif;
+  font-size: 12px;
+  color: #000000;
+  text-align: center;
+  width: 70%;
+  max-width: 240px;
+  margin: 0 auto;
+  line-height: 16px;
+  height: auto;
+}
+
+.social-media__description {
+  font-family: 'UniversLTPro-BoldExt', serif;
+  font-size: 13px;
+  color: #000000;
+  text-align: center;
+  padding-top: 	30px;
+  width: 100%;
+  height: auto;
+}
+
+
+.gallery {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
+.gallery__item {
+  width: 100%;
+  text-align: center;
+  margin-top: 40px;
+}
+
+.gallery__image {
+  width: 100%;
+  height: auto;
+}
+
+@media (max-width: 1300px) {
+  .main {
+    padding: 50px 15px;
+  }
+}
+
+@media (max-width: 768px) {
+  .header__title {
+    font-size: 40px;
+  }
+
+  .header__subtitle {
+    font-size: 16px;
+  }
+
+  .social-media__item {
+    width: 100%;
+  }
+
+  .gallery__item {
+    width: 100%;
+	padding-bottom: 10px;
+  }
+	
+.social-media__button {
+	color:#000 ;
+	background-image: url("../images/holo_tlo.png");
+    background-size: cover;
+	background-repeat: no-repeat;
+	
+}
+
+
+@media (max-width: 455px) {
+  .main {
+    margin: 0px auto;
+  }
+  .social-media__item {
+    margin-bottom: 60px
+  }
+  .social-media__description {
+    padding-top: 20px
+  }
+}
